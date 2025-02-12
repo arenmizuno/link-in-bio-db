@@ -8,6 +8,102 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+    <style>
+      .avatar-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 200px;
+      }
+
+      .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+      }
+
+      html {
+      min-height: 100%;
+      }
+
+      body {
+      min-height: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-image: url('background.jpg');
+      background-size: cover; /* Ensures the image covers the entire viewport */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      }
+
+      a {
+      color: rgba(255, 255, 255, 1.0);
+      text-decoration: none;
+      font-size: 20px;
+      }
+
+      .item {
+      background-color: rgba(144, 144, 144, 0.5);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      }
+
+      .main-container {
+      width: 640px;
+      }
+
+      .main-container {
+      max-width: 640px;
+      margin: auto;
+      }
+
+      .image-row {
+      margin-bottom: 20px;
+      }
+
+      .name-row {
+      margin-bottom: 30px;
+      font-family: "Georgia";
+      color: rgba(255, 255, 255, 1.0);
+      font-size: 24px;
+      font-weight: 900;
+      }
+
+      .social-icons-row {
+      margin-bottom: 30px;
+      }
+      
+      .item {
+      margin-bottom: 20px;
+      }
+
+      .image-row {
+      margin-bottom: 20px;
+      text-align: center;
+      }
+
+      .name-row {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 30px;
+      }
+
+      .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+      }
+
+      .link-text {
+      text-align: center;
+      flex-grow: 1;
+      }
+    </style>
   </head>
 
   <body>

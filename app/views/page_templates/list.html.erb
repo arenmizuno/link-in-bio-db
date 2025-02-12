@@ -1,0 +1,43 @@
+<!-- app/views/page_templates/list.html.erb -->
+
+<body>
+  <div class="main-container">
+    <div class="image-row">
+      <img class="avatar-image" src="/professionalpic.jpg" alt="Aren Mizuno headshot">
+    </div>
+
+    <div class="name-row">
+      Aren Mizuno
+    </div>
+
+    <div class="social-icons-row">
+      <a href="https://github.com/arenmizuno" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/arenmizuno/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+
+      <a href="https://www.instagram.com/arenmizuno/" target="_blank">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+
+      <a href="https://open.spotify.com/user/arenmizuno16" target="_blank">
+        <i class="fa-brands fa-spotify"></i> Spotify
+      </a>
+    </div>
+
+    <div class="links-row">
+
+      <% @list_of_items.each do |the_item| %>
+        <div class="item">
+          <img src="<%= the_item.thumbnail_url %>" class="thumbnail">
+          <a class="link-text" target="_blank" href="<%= the_item.link_url %>">
+            <%= the_item.link_description %>
+          </a>
+        </div>
+      <% end %>
+    </div> <!-- links-row -->
+  </div> <!-- main-container -->
+</body>
